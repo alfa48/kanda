@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Perfil — Kanda</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="../css/profile.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="../index.html" class="logo">
+          <span class="logo-icon">📚</span>
+          <span class="logo-text">Kanda</span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="../index.html" class="nav-link">Início</a></li>
+          <li><a href="../courses.html" class="nav-link">Cursos</a></li>
+          <li><a href="../hall-of-fame.html" class="nav-link">Hall da Fama</a></li>
+          <li><a href="../about.html" class="nav-link">Sobre</a></li>
+          <li><a href="../contact.html" class="nav-link">Contacto</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="profile.html" class="btn btn-outline">Perfil</a>
+          <a href="../index.html" class="btn btn-danger">Sair</a>
+        </div>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PROFILE LAYOUT -->
+  <div class="dashboard-layout">
+    <!-- SIDEBAR -->
+    <aside class="dashboard-sidebar">
+      <div class="user-card">
+        <div class="user-avatar">👨‍🎓</div>
+        <h3>Sofia Oliveira</h3>
+        <p class="user-level">Level 25</p>
+        <p class="user-points">12.890 pts</p>
+      </div>
+
+      <nav class="sidebar-menu">
+        <a href="dashboard.html" class="menu-item">📊 Dashboard</a>
+        <a href="meus-cursos.html" class="menu-item">📚 Meus Cursos</a>
+        <a href="profile.html" class="menu-item active">👤 Perfil</a>
+        <a href="certificados.html" class="menu-item">🏆 Certificados</a>
+        <a href="configuracoes.html" class="menu-item">⚙️ Configurações</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="../index.html" class="btn btn-sm btn-danger">Sair</a>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="dashboard-main">
+      <div class="dashboard-header">
+        <h1>Meu Perfil</h1>
+      </div>
+
+      <!-- PROFILE INFO -->
+      <div class="profile-container">
+        <!-- PROFILE HEADER -->
+        <div class="profile-header">
+          <div class="profile-avatar">👨‍🎓</div>
+          <div class="profile-info">
+            <h2>Sofia Oliveira</h2>
+            <p class="profile-bio">Estudante | Luanda, Angola</p>
+            <div class="profile-stats">
+              <span><strong>25</strong> Level</span>
+              <span><strong>18</strong> Cursos</span>
+              <span><strong>12.890</strong> Pontos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PERSONAL INFO SECTION -->
+        <div class="profile-section">
+          <h3>Informações Pessoais</h3>
+          <div class="info-grid">
+            <div class="info-item">
+              <label>Email</label>
+              <p>sofia.oliveira@email.com</p>
+            </div>
+            <div class="info-item">
+              <label>Telefone</label>
+              <p>+244 923 456 789</p>
+            </div>
+            <div class="info-item">
+              <label>Data de Nascimento</label>
+              <p>12 de Junho de 1998</p>
+            </div>
+            <div class="info-item">
+              <label>Localização</label>
+              <p>Luanda, Angola</p>
+            </div>
+            <div class="info-item">
+              <label>Universidade</label>
+              <p>Universidade Agostinho Neto</p>
+            </div>
+            <div class="info-item">
+              <label>Membro Desde</label>
+              <p>15 de Março de 2023</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- LEARNING STATS SECTION -->
+        <div class="profile-section">
+          <h3>Estatísticas de Aprendizado</h3>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-icon">📚</span>
+              <div>
+                <strong>18 Cursos Completados</strong>
+                <p>Certificados obtidos</p>
+              </div>
+            </div>
+            <div class="stat-item">
+              <span class="stat-icon">⏱️</span>
+              <div>
+                <strong>156 horas de Aprendizado</strong>
+                <p>Tempo total gasto</p>
+              </div>
+            </div>
+            <div class="stat-item">
+              <span class="stat-icon">⚡</span>
+              <div>
+                <strong>47 dias de Racha</strong>
+                <p>Sequência actual</p>
+              </div>
+            </div>
+            <div class="stat-item">
+              <span class="stat-icon">🏆</span>
+              <div>
+                <strong>12 Insígnias</strong>
+                <p>Achievements conquistados</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACHIEVEMENTS SECTION -->
+        <div class="profile-section">
+          <h3>Insígnias Conquistadas</h3>
+          <div class="badges-grid">
+            <div class="badge-item">
+              <div class="badge-icon">🌟</div>
+              <strong>Iniciador</strong>
+              <p>Completar 1º curso</p>
+              <span class="badge-date">20/03/2023</span>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">🚀</div>
+              <strong>Foguete</strong>
+              <p>Ganhar 5.000 pontos</p>
+              <span class="badge-date">15/05/2023</span>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">🎓</div>
+              <strong>Académico</strong>
+              <p>Completar 5 cursos</p>
+              <span class="badge-date">10/08/2023</span>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">⚡</div>
+              <strong>Relâmpago</strong>
+              <p>Racha de 30 dias</p>
+              <span class="badge-date">25/09/2023</span>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">🏆</div>
+              <strong>Campeão</strong>
+              <p>Top 10 do ranking</p>
+              <span class="badge-date">01/12/2023</span>
+            </div>
+            <div class="badge-item locked">
+              <div class="badge-icon">👑</div>
+              <strong>Mestre</strong>
+              <p>Alcançar Level 20</p>
+              <span class="badge-date">Bloqueado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACTION BUTTONS -->
+        <div class="profile-actions">
+          <a href="editar-perfil.html" class="btn btn-primary">Editar Perfil</a>
+          <a href="configuracoes.html" class="btn btn-outline">Configurações</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        &copy; 2024 Kanda. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

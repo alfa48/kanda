@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Guide - Plataforma Educacional</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <h1>🎓 Style Guide — Plataforma Educacional Gamificada</h1>
+</header>
+
+<main class="container">
+
+  <!-- Tipografia -->
+  <section>
+    <h2>🧭 Tipografia</h2>
+    <h1>Título Principal (h1)</h1>
+    <h2>Subtítulo (h2)</h2>
+    <h3>Seção (h3)</h3>
+    <p>Este é um parágrafo de exemplo. Use-o para blocos de texto maiores.</p>
+    <a href="#">Isto é um link</a>
+  </section>
+
+  <!-- Botões -->
+  <section>
+    <h2>🔘 Botões</h2>
+    <div class="btn-group">
+      <button class="btn primary">Primário</button>
+      <button class="btn secondary">Secundário</button>
+      <button class="btn outline">Contorno</button>
+      <button class="btn danger">Excluir</button>
+      <button class="btn small">Pequeno</button>
+    </div>
+  </section>
+
+  <!-- Inputs -->
+  <section>
+    <h2>🧩 Inputs</h2>
+    <label>Texto simples</label>
+    <input type="text" placeholder="Digite aqui...">
+
+    <label>Área de texto</label>
+    <textarea rows="3" placeholder="Escreva algo..."></textarea>
+
+    <label>Selecionar</label>
+    <select>
+      <option>Opção 1</option>
+      <option>Opção 2</option>
+      <option>Opção 3</option>
+    </select>
+
+    <div class="radio-group">
+      <label><input type="radio" name="opcao" checked> Opção A</label>
+      <label><input type="radio" name="opcao"> Opção B</label>
+    </div>
+
+    <div class="spinner">
+      <div class="loading"></div>
+      <span>Carregando...</span>
+    </div>
+  </section>
+
+  <!-- Tags -->
+  <section>
+    <h2>🏷️ Tags</h2>
+    <div class="tags">
+      <span class="tag primary">#Matemática</span>
+      <span class="tag secondary">#Física</span>
+      <span class="tag">#Química</span>
+    </div>
+  </section>
+
+  <!-- Ícones -->
+  <section>
+    <h2>🧰 Ícones de ação</h2>
+    <div class="icons">
+      <button class="icon-btn" title="Adicionar">➕</button>
+      <button class="icon-btn" title="Editar">✏️</button>
+      <button class="icon-btn danger" title="Excluir">🗑️</button>
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section>
+    <h2>📦 Cards</h2>
+    <div class="cards-container">
+      <div class="card">
+        <div class="image-placeholder"></div>
+        <h3>Desafio de Matemática</h3>
+        <p>Complete este quiz e suba de nível!</p>
+        <button class="btn small">Iniciar</button>
+      </div>
+      <div class="card">
+        <div class="image-placeholder"></div>
+        <h3>Ciências Naturais</h3>
+        <p>Aprenda com jogos e vídeos curtos.</p>
+        <button class="btn small">Ver mais</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <section>
+    <h2>🪟 Modal</h2>
+    <button class="btn primary" onclick="openModal()">Abrir Modal</button>
+  </section>
+
+</main>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3>Exemplo de Modal</h3>
+    <p>Este é um componente reutilizável para alertas, formulários e feedback.</p>
+    <button class="btn secondary" onclick="closeModal()">Fechar</button>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById('modal');
+  function openModal() { modal.style.display = 'flex'; }
+  function closeModal() { modal.style.display = 'none'; }
+</script>
+
+</body>
+</html>

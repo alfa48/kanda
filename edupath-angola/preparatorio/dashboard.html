@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard Preparatório — Kanda</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="preparatorio.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="../index.html" class="logo">
+          <span class="logo-icon" aria-label="Livro" role="img">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="4" width="20" height="20" rx="4" fill="#F5B75D" stroke="#1E1E1E" stroke-width="2"/><rect x="7" y="8" width="12" height="12" rx="2" fill="#fff" stroke="#1E1E1E" stroke-width="1.5"/></svg>
+          </span>
+          <span class="logo-text">Kanda</span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="../index.html" class="nav-link">Início</a></li>
+          <li><a href="../curso/courses.html" class="nav-link">Cursos</a></li>
+          <li><a href="../hall-of-fame.html" class="nav-link">Hall da Fama</a></li>
+          <li><a href="../about.html" class="nav-link">Sobre</a></li>
+          <li><a href="../contact.html" class="nav-link">Contacto</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="profile.html" class="btn btn-outline">
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><circle cx="12" cy="8" r="4" stroke="#1E1E1E" stroke-width="2"/><path d="M4 20c0-2.21 3.582-4 8-4s8 1.79 8 4" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"/></svg>
+            Perfil
+          </a>
+          <a href="../index.html" class="btn btn-danger">
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><path d="M15 12H3" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M10 7l-5 5 5 5" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+            Sair
+          </a>
+        </div>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- DASHBOARD LAYOUT -->
+  <div class="dashboard-layout">
+    <!-- SIDEBAR -->
+    <aside class="dashboard-sidebar">
+      <div class="user-card">
+        <div class="user-avatar" aria-label="Staff" role="img">
+          <svg width="48" height="48" fill="none" viewBox="0 0 48 48"><circle cx="24" cy="18" r="10" fill="#F5B75D" stroke="#1E1E1E" stroke-width="2"/><ellipse cx="24" cy="38" rx="14" ry="8" fill="#fff" stroke="#1E1E1E" stroke-width="2"/></svg>
+        </div>
+        <h3>Admin Staff</h3>
+        <p class="user-level">Moderador</p>
+        <p class="user-points">45 cursos pendentes</p>
+      </div>
+      <nav class="sidebar-menu">
+        <a href="dashboard.html" class="menu-item active">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><rect x="4" y="4" width="16" height="16" rx="3" stroke="#1E1E1E" stroke-width="2"/><path d="M8 8h8v8H8z" fill="#F5B75D" stroke="#1E1E1E" stroke-width="1.5"/></svg>
+          Pendentes
+        </a>
+        <a href="aprovados.html" class="menu-item">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><circle cx="12" cy="12" r="10" stroke="#1E1E1E" stroke-width="2"/><path d="M8 12l2.5 2.5L16 9" stroke="#10b981" stroke-width="2" stroke-linecap="round"/></svg>
+          Aprovados
+        </a>
+        <a href="rejeitados.html" class="menu-item">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><circle cx="12" cy="12" r="10" stroke="#1E1E1E" stroke-width="2"/><path d="M9 9l6 6M15 9l-6 6" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/></svg>
+          Rejeitados
+        </a>
+        <a href="profile.html" class="menu-item">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><circle cx="12" cy="8" r="4" stroke="#1E1E1E" stroke-width="2"/><path d="M4 20c0-2.21 3.582-4 8-4s8 1.79 8 4" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"/></svg>
+          Perfil
+        </a>
+        <a href="configuracoes.html" class="menu-item">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><circle cx="12" cy="12" r="10" stroke="#1E1E1E" stroke-width="2"/><path d="M12 8v4l3 3" stroke="#F5B75D" stroke-width="2" stroke-linecap="round"/></svg>
+          Configurações
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="../index.html" class="btn btn-sm btn-danger">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><path d="M15 12H3" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M10 7l-5 5 5 5" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+          Sair
+        </a>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="dashboard-main">
+      <div class="dashboard-header">
+        <h1>
+          <svg width="28" height="28" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:8px;"><rect x="4" y="4" width="16" height="16" rx="3" stroke="#1E1E1E" stroke-width="2"/><path d="M8 8h8v8H8z" fill="#F5B75D" stroke="#1E1E1E" stroke-width="1.5"/></svg>
+          Cursos Pendentes de Aprovação
+        </h1>
+        <p id="current-date"></p>
+      </div>
+
+      <!-- STATS ROW -->
+      <div class="stats-row">
+        <div class="stat-box">
+          <div class="stat-number">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><rect x="4" y="4" width="16" height="16" rx="3" stroke="#1E1E1E" stroke-width="2"/><path d="M8 8h8v8H8z" fill="#F5B75D" stroke="#1E1E1E" stroke-width="1.5"/></svg>
+            45
+          </div>
+          <div class="stat-label">Pendentes</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><circle cx="12" cy="12" r="10" stroke="#1E1E1E" stroke-width="2"/><path d="M8 12l2.5 2.5L16 9" stroke="#10b981" stroke-width="2" stroke-linecap="round"/></svg>
+            234
+          </div>
+          <div class="stat-label">Aprovados</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><circle cx="12" cy="12" r="10" stroke="#1E1E1E" stroke-width="2"/><path d="M9 9l6 6M15 9l-6 6" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/></svg>
+            18
+          </div>
+          <div class="stat-label">Rejeitados</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><circle cx="12" cy="12" r="10" stroke="#1E1E1E" stroke-width="2"/><path d="M12 8v4l3 3" stroke="#F5B75D" stroke-width="2" stroke-linecap="round"/></svg>
+            89%
+          </div>
+          <div class="stat-label">Taxa Aprovação</div>
+        </div>
+      </div>
+
+      <!-- FILTER SECTION -->
+      <div class="filter-section">
+        <div class="filter-group">
+          <select class="filter-select">
+            <option>Todas as Universidades</option>
+            <option>UAN</option>
+            <option>Católica</option>
+            <option>Metodista</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <select class="filter-select">
+            <option>Todas as Categorias</option>
+            <option>Tecnologia</option>
+            <option>Negócios</option>
+            <option>Artes</option>
+            <option>Ciências</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- COURSES LIST -->
+      <div class="courses-pending-list">
+        <!-- COURSE 1 -->
+        <div class="course-pending-card">
+          <div class="course-pending-header">
+            <div class="course-pending-info">
+              <h3>
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><rect x="4" y="4" width="16" height="16" rx="3" stroke="#1E1E1E" stroke-width="2"/><path d="M8 8h8v8H8z" fill="#F5B75D" stroke="#1E1E1E" stroke-width="1.5"/></svg>
+                Introdução ao Machine Learning
+              </h3>
+              <p class="course-professor">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px;"><circle cx="12" cy="8" r="4" stroke="#1E1E1E" stroke-width="2"/><path d="M4 20c0-2.21 3.582-4 8-4s8 1.79 8 4" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"/></svg>
+                Prof. Carlos Silva • UAN
+              </p>
+              <p class="course-category">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px;"><rect x="4" y="4" width="16" height="16" rx="3" stroke="#1E1E1E" stroke-width="2"/></svg>
+                Categoria: Tecnologia
+              </p>
+            </div>
+            <span class="status-badge pending">
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px;"><circle cx="12" cy="12" r="10" stroke="#F5B75D" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="#F5B75D"/></svg>
+              Pendente
+            </span>
+          </div>
+
+          <div class="course-pending-details">
+            <div class="detail-row">
+              <span class="detail-label">Duração</span>
+              <span>12 semanas • 40 horas</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Alunos Estimados</span>
+              <span>300+ alunos</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Data Submissão</span>
+              <span>15 de Janeiro de 2024</span>
+            </div>
+          </div>
+
+          <div class="course-pending-description">
+            <p>Curso introdutório em machine learning com foco em aplicações práticas. Cobre conceitos fundamentais de ML, algoritmos de classificação e regressão, com projetos práticos usando Python e bibliotecas populares.</p>
+          </div>
+
+          <div class="course-pending-actions">
+            <a href="revisar-curso.html?id=1" class="btn btn-primary">Revisar Detalhes</a>
+            <button class="btn btn-approve" onclick="approveCourse(1)">✅ Aprovar</button>
+            <button class="btn btn-reject" onclick="rejectCourse(1)">❌ Rejeitar</button>
+          </div>
+        </div>
+
+        <!-- COURSE 2 -->
+        <div class="course-pending-card">
+          <div class="course-pending-header">
+            <div class="course-pending-info">
+              <h3>
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><rect x="4" y="4" width="16" height="16" rx="3" stroke="#1E1E1E" stroke-width="2"/><path d="M8 8h8v8H8z" fill="#E89B6D" stroke="#1E1E1E" stroke-width="1.5"/></svg>
+                Gestão de Projetos Ágil
+              </h3>
+              <p class="course-professor">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px;"><circle cx="12" cy="8" r="4" stroke="#1E1E1E" stroke-width="2"/><path d="M4 20c0-2.21 3.582-4 8-4s8 1.79 8 4" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"/></svg>
+                Prof. Ana Costa • Católica
+              </p>
+              <p class="course-category">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px;"><rect x="4" y="4" width="16" height="16" rx="3" stroke="#1E1E1E" stroke-width="2"/></svg>
+                Categoria: Negócios
+              </p>
+            </div>
+            <span class="status-badge pending">
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px;"><circle cx="12" cy="12" r="10" stroke="#F5B75D" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="#F5B75D"/></svg>
+              Pendente
+            </span>
+          </div>
+
+          <div class="course-pending-details">
+            <div class="detail-row">
+              <span class="detail-label">Duração</span>
+              <span>10 semanas • 30 horas</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Alunos Estimados</span>
+              <span>250+ alunos</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Data Submissão</span>
+              <span>14 de Janeiro de 2024</span>
+            </div>
+          </div>
+
+          <div class="course-pending-description">
+            <p>Metodologias ágeis para gestão de projetos. Cobre Scrum, Kanban, daily standups, sprints e boas práticas de liderança ágil. Inclui estudos de caso e simulações de projetos reais.</p>
+          </div>
+
+          <div class="course-pending-actions">
+            <a href="revisar-curso.html?id=2" class="btn btn-primary">Revisar Detalhes</a>
+            <button class="btn btn-approve" onclick="approveCourse(2)">✅ Aprovar</button>
+            <button class="btn btn-reject" onclick="rejectCourse(2)">❌ Rejeitar</button>
+          </div>
+        </div>
+
+        <!-- COURSE 3 -->
+        <div class="course-pending-card">
+          <div class="course-pending-header">
+            <div class="course-pending-info">
+              <h3>
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><rect x="4" y="4" width="16" height="16" rx="3" stroke="#1E1E1E" stroke-width="2"/><path d="M8 8h8v8H8z" fill="#C77FE8" stroke="#1E1E1E" stroke-width="1.5"/></svg>
+                Análise de Dados Avançada
+              </h3>
+              <p class="course-professor">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px;"><circle cx="12" cy="8" r="4" stroke="#1E1E1E" stroke-width="2"/><path d="M4 20c0-2.21 3.582-4 8-4s8 1.79 8 4" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"/></svg>
+                Prof. Maria Fernandes • Metodista
+              </p>
+              <p class="course-category">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px;"><rect x="4" y="4" width="16" height="16" rx="3" stroke="#1E1E1E" stroke-width="2"/></svg>
+                Categoria: Tecnologia
+              </p>
+            </div>
+            <span class="status-badge pending">
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px;"><circle cx="12" cy="12" r="10" stroke="#F5B75D" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="#F5B75D"/></svg>
+              Pendente
+            </span>
+          </div>
+
+          <div class="course-pending-details">
+            <div class="detail-row">
+              <span class="detail-label">Duração</span>
+              <span>14 semanas • 50 horas</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Alunos Estimados</span>
+              <span>400+ alunos</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Data Submissão</span>
+              <span>13 de Janeiro de 2024</span>
+            </div>
+          </div>
+
+          <div class="course-pending-description">
+            <p>Análise avançada de dados com foco em visualização, estatística aplicada e ferramentas modernas. Cobre Python (Pandas, NumPy), visualização (Matplotlib, Seaborn) e storytelling com dados.</p>
+          </div>
+
+          <div class="course-pending-actions">
+            <a href="revisar-curso.html?id=3" class="btn btn-primary">Revisar Detalhes</a>
+            <button class="btn btn-approve" onclick="approveCourse(3)">✅ Aprovar</button>
+            <button class="btn btn-reject" onclick="rejectCourse(3)">❌ Rejeitar</button>
+          </div>
+        </div>
+
+        <!-- COURSE 4 -->
+        <div class="course-pending-card">
+          <div class="course-pending-header">
+            <div class="course-pending-info">
+              <h3>
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><rect x="4" y="4" width="16" height="16" rx="3" stroke="#1E1E1E" stroke-width="2"/><path d="M8 8h8v8H8z" fill="#E8E5DF" stroke="#1E1E1E" stroke-width="1.5"/></svg>
+                Design Gráfico Essencial
+              </h3>
+              <p class="course-professor">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px;"><circle cx="12" cy="8" r="4" stroke="#1E1E1E" stroke-width="2"/><path d="M4 20c0-2.21 3.582-4 8-4s8 1.79 8 4" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"/></svg>
+                Prof. João Matos • UAN
+              </p>
+              <p class="course-category">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px;"><rect x="4" y="4" width="16" height="16" rx="3" stroke="#1E1E1E" stroke-width="2"/></svg>
+                Categoria: Artes
+              </p>
+            </div>
+            <span class="status-badge pending">
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:2px;"><circle cx="12" cy="12" r="10" stroke="#F5B75D" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="#F5B75D"/></svg>
+              Pendente
+            </span>
+          </div>
+
+          <div class="course-pending-details">
+            <div class="detail-row">
+              <span class="detail-label">Duração</span>
+              <span>8 semanas • 25 horas</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Alunos Estimados</span>
+              <span>200+ alunos</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Data Submissão</span>
+              <span>12 de Janeiro de 2024</span>
+            </div>
+          </div>
+
+          <div class="course-pending-description">
+            <p>Fundamentos de design gráfico usando Adobe Creative Suite (Photoshop, Illustrator, InDesign). Cobre princípios de design, tipografia, cores e criação de projetos visuais profissionais.</p>
+          </div>
+
+          <div class="course-pending-actions">
+            <a href="revisar-curso.html?id=4" class="btn btn-primary">Revisar Detalhes</a>
+            <button class="btn btn-approve" onclick="approveCourse(4)">✅ Aprovar</button>
+            <button class="btn btn-reject" onclick="rejectCourse(4)">❌ Rejeitar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        &copy; 2024 Kanda. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    const dateEl = document.getElementById('current-date');
+    const now = new Date();
+    const options = { weekday: 'short', month: 'short', day: 'numeric' };
+    dateEl.textContent = now.toLocaleDateString('pt-AO', options);
+
+    function approveCourse(id) {
+      alert('Curso ' + id + ' aprovado!');
+      // Backend call aqui
+    }
+
+    function rejectCourse(id) {
+      alert('Redirecionando para formulário de rejeição do curso ' + id);
+      // window.location.href = 'rejeitar-curso.html?id=' + id;
+    }
+  </script>
+</body>
+</html>

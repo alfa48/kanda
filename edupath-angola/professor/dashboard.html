@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard Professor — Kanda</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="professor-dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="../index.html" class="logo">
+          <span class="logo-icon">📚</span>
+          <span class="logo-text">Kanda</span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="../index.html" class="nav-link">Início</a></li>
+          <li><a href="../curso/courses.html" class="nav-link">Cursos</a></li>
+          <li><a href="../hall-of-fame.html" class="nav-link">Hall da Fama</a></li>
+          <li><a href="../about.html" class="nav-link">Sobre</a></li>
+          <li><a href="../contact.html" class="nav-link">Contacto</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="profile.html" class="btn btn-outline">Perfil</a>
+          <a href="../index.html" class="btn btn-danger">Sair</a>
+        </div>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- DASHBOARD LAYOUT -->
+  <div class="dashboard-layout">
+    <!-- SIDEBAR -->
+    <aside class="dashboard-sidebar">
+      <div class="user-card">
+        <div class="user-avatar">👨‍🏫</div>
+        <h3>João Silva</h3>
+        <p class="user-level">Professor Sênior</p>
+        <p class="user-points">2.450 alunos</p>
+      </div>
+
+      <nav class="sidebar-menu">
+        <a href="dashboard.html" class="menu-item active">📊 Dashboard</a>
+        <a href="meus-cursos.html" class="menu-item">📚 Meus Cursos</a>
+        <a href="alunos.html" class="menu-item">👥 Alunos</a>
+        <a href="profile.html" class="menu-item">👤 Perfil</a>
+        <a href="configuracoes.html" class="menu-item">⚙️ Configurações</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="../index.html" class="btn btn-sm btn-danger">Sair</a>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="dashboard-main">
+      <div class="dashboard-header">
+        <h1>Dashboard Professor</h1>
+        <p id="current-date"></p>
+      </div>
+
+      <!-- STATS ROW -->
+      <div class="stats-row">
+        <div class="stat-box">
+          <div class="stat-number">2.450</div>
+          <div class="stat-label">Alunos Total</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">8</div>
+          <div class="stat-label">Cursos Ativos</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">94%</div>
+          <div class="stat-label">Taxa Conclusão</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">4.8/5</div>
+          <div class="stat-label">Avaliação Média</div>
+        </div>
+      </div>
+
+      <!-- ACTIVE COURSES -->
+      <div class="section">
+        <h2>Cursos Ativos</h2>
+        <div class="courses-list">
+          <div class="course-row">
+            <div class="course-left">
+              <div class="course-title">
+                <span class="course-icon">💻</span>
+                <div>
+                  <h4>Introdução ao Python</h4>
+                  <p>Universidade Agostinho Neto</p>
+                </div>
+              </div>
+            </div>
+            <div class="course-right">
+              <span class="course-students">324 alunos</span>
+              <span class="course-completion">94%</span>
+              <a href="course-edit.html?id=1" class="btn btn-xs">Gerenciar</a>
+            </div>
+          </div>
+
+          <div class="course-row">
+            <div class="course-left">
+              <div class="course-title">
+                <span class="course-icon">🌐</span>
+                <div>
+                  <h4>Desenvolvimento Web com React</h4>
+                  <p>Universidade Agostinho Neto</p>
+                </div>
+              </div>
+            </div>
+            <div class="course-right">
+              <span class="course-students">456 alunos</span>
+              <span class="course-completion">87%</span>
+              <a href="course-edit.html?id=2" class="btn btn-xs">Gerenciar</a>
+            </div>
+          </div>
+
+          <div class="course-row">
+            <div class="course-left">
+              <div class="course-title">
+                <span class="course-icon">📈</span>
+                <div>
+                  <h4>Data Science Essencial</h4>
+                  <p>Universidade Agostinho Neto</p>
+                </div>
+              </div>
+            </div>
+            <div class="course-right">
+              <span class="course-students">289 alunos</span>
+              <span class="course-completion">91%</span>
+              <a href="course-edit.html?id=3" class="btn btn-xs">Gerenciar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PENDING REVIEWS -->
+      <div class="section">
+        <h2>Tarefas Pendentes</h2>
+        <div class="tasks-list">
+          <div class="task-item pending">
+            <div class="task-left">
+              <span class="task-icon">⏰</span>
+              <div>
+                <strong>Revisar 15 Submissões</strong>
+                <p>Módulo 5 - Python (Vencimento: hoje)</p>
+              </div>
+            </div>
+            <a href="submissions.html" class="btn btn-xs">Revisar</a>
+          </div>
+
+          <div class="task-item">
+            <div class="task-left">
+              <span class="task-icon">📢</span>
+              <div>
+                <strong>Anúncio do Novo Módulo</strong>
+                <p>Agendar para próxima segunda-feira</p>
+              </div>
+            </div>
+            <a href="announcements.html" class="btn btn-xs">Editar</a>
+          </div>
+
+          <div class="task-item">
+            <div class="task-left">
+              <span class="task-icon">📊</span>
+              <div>
+                <strong>Gerar Relatório de Progresso</strong>
+                <p>Trimestre 1 - Todos os cursos</p>
+              </div>
+            </div>
+            <a href="reports.html" class="btn btn-xs">Gerar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RECENT ACTIVITY -->
+      <div class="section">
+        <h2>Atividade Recente</h2>
+        <div class="activity-feed">
+          <div class="activity-item">
+            <div class="activity-icon">✅</div>
+            <div class="activity-content">
+              <strong>Sofia Oliveira</strong> completou o Módulo 5 em Python
+              <span class="activity-time">Há 2 horas</span>
+            </div>
+          </div>
+
+          <div class="activity-item">
+            <div class="activity-icon">❓</div>
+            <div class="activity-content">
+              <strong>Carlos Mendes</strong> fez uma pergunta em React
+              <span class="activity-time">Há 4 horas</span>
+            </div>
+          </div>
+
+          <div class="activity-item">
+            <div class="activity-icon">⭐</div>
+            <div class="activity-content">
+              <strong>Maria Santos</strong> deixou uma avaliação 5 estrelas
+              <span class="activity-time">Há 6 horas</span>
+            </div>
+          </div>
+
+          <div class="activity-item">
+            <div class="activity-icon">📝</div>
+            <div class="activity-content">
+              <strong>Ana Costa</strong> enviou uma submissão em Data Science
+              <span class="activity-time">Há 8 horas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        &copy; 2024 Kanda. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    const dateEl = document.getElementById('current-date');
+    const now = new Date();
+    const options = { weekday: 'short', month: 'short', day: 'numeric' };
+    dateEl.textContent = now.toLocaleDateString('pt-AO', options);
+  </script>
+</body>
+</html>

@@ -1,0 +1,443 @@
+/* === HERO SECTION === */
+.hero {
+  padding: 120px 0 80px;
+  background: linear-gradient(180deg, var(--color-light) 0%, #fff 100%);
+  margin-top: 80px;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-dark);
+  line-height: 1.2;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  color: var(--color-gray);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero-icon {
+  font-size: 6rem;
+  display: block;
+  text-align: center;
+}
+
+/* === UNIVERSITIES SECTION === */
+.universities {
+  padding: 60px 0;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--color-gray);
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.universities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.university-item {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+/* === FEATURES SECTION === */
+.features {
+  padding: 80px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-label {
+  color: var(--color-secondary);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.section-header h2 {
+  margin-bottom: 1rem;
+}
+
+.section-description {
+  color: var(--color-gray);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* === HOW IT WORKS === */
+.how-it-works {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  padding: 80px 0;
+  border-radius: var(--radius);
+  margin: 80px 0;
+}
+
+.how-it-works .section-header {
+  color: var(--color-dark);
+}
+
+.how-it-works .section-header h2 {
+  color: var(--color-dark);
+}
+
+.how-it-works .section-description {
+  color: var(--color-dark);
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.step {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.step-number {
+  background: var(--color-dark);
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.step h3 {
+  color: var(--color-dark);
+  margin-bottom: 0.5rem;
+}
+
+.step p {
+  color: var(--color-dark);
+  margin: 0;
+}
+
+/* === CTA SECTION === */
+.cta-section {
+  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+  color: var(--color-dark);
+  padding: 100px 0;
+  border-radius: var(--radius);
+  margin: 60px 0;
+}
+
+.cta-content {
+  text-align: center;
+}
+
+.cta-content h2 {
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  color: var(--color-dark);
+  font-size: 1.25rem;
+  margin: 0 0 2rem;
+}
+
+.btn-cta {
+  background: var(--color-dark);
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  padding: 1.2rem 2.5rem;
+}
+
+.btn-cta:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-icon {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+  }
+
+  .steps-container {
+    gap: 2rem;
+  }
+
+  .step {
+    gap: 1.5rem;
+  }
+
+  .step-number {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 0 60px;
+    margin-top: 70px;
+  }
+
+  .hero-content {
+    gap: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-group {
+    flex-direction: column;
+  }
+
+  .btn-group .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .universities-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .university-item {
+    font-size: 2rem;
+  }
+
+  .features {
+    padding: 40px 0;
+  }
+
+  .card-icon {
+    font-size: 2rem;
+  }
+
+  .how-it-works {
+    padding: 40px 0;
+    margin: 40px 0;
+  }
+
+  .step {
+    gap: 1rem;
+  }
+
+  .step h3 {
+    font-size: 1.1rem;
+  }
+
+  .step p {
+    font-size: 0.9rem;
+  }
+
+  .cta-section {
+    padding: 60px 0;
+    margin: 40px 0;
+  }
+
+  .cta-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 0 40px;
+    margin-top: 70px;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .badge {
+    font-size: 0.8rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .btn-group {
+    gap: 0.75rem;
+  }
+
+  .btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .universities {
+    padding: 40px 0;
+  }
+
+  .universities-grid {
+    gap: 1rem;
+  }
+
+  .university-item {
+    font-size: 1.5rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .section-description {
+    font-size: 0.9rem;
+  }
+
+  .cards-container {
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+    box-shadow: 3px 3px 0 var(--color-dark);
+  }
+
+  .card-icon {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+  }
+
+  .how-it-works {
+    padding: 40px 0;
+    margin: 30px 0;
+  }
+
+  .step {
+    gap: 0.75rem;
+  }
+
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .step h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .step p {
+    font-size: 0.8rem;
+  }
+
+  .cta-section {
+    padding: 50px 0;
+    margin: 30px 0;
+  }
+
+  .cta-content h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .cta-content p {
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .btn-cta {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 1.25rem;
+  }
+
+  .step-number {
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+  }
+
+  .cta-content h2 {
+    font-size: 1.1rem;
+  }
+}
