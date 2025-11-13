@@ -1,197 +1,455 @@
 <!DOCTYPE html>
 <html lang="pt-AO">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanda — Plataforma de Aprendizagem Gamificada</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/index.css">
-    <!-- ...existing code... -->
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet">
-<!-- ...existing code... -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kanda — Plataforma de Aprendizagem Gamificada de Angola</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- NAVIGATION -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="index.html" class="logo">
-                    <span class="logo-icon">🎓</span>
-                    <span class="logo-text">Kanda</span>
-                </a>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html" class="nav-link active">Início</a></li>
-                    <li><a href="curso/courses.html" class="nav-link">Cursos</a></li>
-                    <li><a href="hall-of-fame.html" class="nav-link">Hall da Fama</a></li>
-                    <li><a href="about.html" class="nav-link">Sobre</a></li>
-                    <li><a href="contact.html" class="nav-link">Contacto</a></li>
-                </ul>
-                <div class="nav-actions">
-                    <a href="login.html" class="btn btn-outline">Entrar</a>
-                    <a href="register.html" class="btn btn-primary">Começar Grátis</a>
-                </div>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">🎓</span>
+          <span class="logo-text">Kanda</span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Início</a></li>
+          <li><a href="curso/courses.html" class="nav-link">Cursos</a></li>
+          <li><a href="#features" class="nav-link">Características</a></li>
+          <li><a href="about.html" class="nav-link">Sobre</a></li>
+          <li><a href="contact.html" class="nav-link">Contacto</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-outline">Entrar</a>
+          <a href="register.html" class="btn btn-primary">Começar Grátis</a>
         </div>
-    </nav>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <span class="badge">✨ Bem-vindo ao Kanda</span>
-                    <h1 class="hero-title">Aprende, Compete e Cresce</h1>
-                    <p class="hero-description">
-                        A plataforma de aprendizagem gamificada que conecta estudantes angolanos com as melhores universidades do país
-                    </p>
-                    <div class="btn-group">
-                        <a href="register.html" class="btn btn-primary btn-lg">Começar Agora</a>
-                        <a href="curso/courses.html" class="btn btn-secondary btn-lg">Explorar Cursos</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="hero-icon">🎯</div>
-                </div>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="badge">✨ Bem-vindo ao Kanda</span>
+          <h1 class="hero-title">Aprende, Compete e Cresce</h1>
+          <p class="hero-description">
+            A plataforma de aprendizagem gamificada que conecta estudantes angolanos com as melhores universidades do país. Ganhe pontos, insígnias e suba de nível enquanto aprende.
+          </p>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong>2.340+</strong>
+              <span>Alunos Ativos</span>
             </div>
+            <div class="hero-stat">
+              <strong>45+</strong>
+              <span>Cursos Disponíveis</span>
+            </div>
+            <div class="hero-stat">
+              <strong>4</strong>
+              <span>Universidades Parceiras</span>
+            </div>
+          </div>
+          <div class="btn-group">
+            <a href="register.html" class="btn btn-primary btn-lg">Começar Agora</a>
+            <a href="curso/courses.html" class="btn btn-secondary btn-lg">Explorar Cursos</a>
+          </div>
         </div>
-    </section>
-
-    <!-- UNIVERSITIES SECTION -->
-    <section class="universities">
-        <div class="container">
-            <p class="section-subtitle">Parceiros Universitários</p>
-            <div class="universities-grid">
-                <div class="university-item">🏛️ UAN</div>
-                <div class="university-item">🏛️ Católica</div>
-                <div class="university-item">🏛️ Metodista</div>
-                <div class="university-item">🏛️ ISPITEC</div>
-            </div>
+        <div class="hero-image">
+          <div class="hero-icon">🎯</div>
+          <div class="hero-decoration"></div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- FEATURES SECTION -->
-    <section class="features">
-        <div class="container">
-            <div class="section-header">
-                <p class="section-label">Características</p>
-                <h2>Porquê Escolher Kanda?</h2>
-                <p class="section-description">Uma plataforma completa para potenciar o teu aprendizado</p>
-            </div>
-
-            <div class="cards-container">
-                <div class="card">
-                    <div class="card-icon">🎮</div>
-                    <h3>Gamificação</h3>
-                    <p>Ganhe pontos, insígnias e suba de nível enquanto aprende. O aprendizado nunca foi tão divertido!</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🏆</div>
-                    <h3>Rankings</h3>
-                    <p>Compete com colegas do seu nível e apareça no Hall da Fama. Reconhecimento real para esforço real.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">📚</div>
-                    <h3>Cursos Universitários</h3>
-                    <p>Acesso a conteúdos criados pelas universidades mais prestigiadas de Angola.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">📊</div>
-                    <h3>Progresso Rastreado</h3>
-                    <p>Veja seu progresso em tempo real com gráficos e estatísticas detalhadas.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🤝</div>
-                    <h3>Comunidade Ativa</h3>
-                    <p>Conecte-se com milhares de estudantes, faça perguntas e colabore com colegas.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🎯</div>
-                    <h3>Aprendizado Personalizado</h3>
-                    <p>Recomendações baseadas no seu ritmo e estilo de aprendizado.</p>
-                </div>
-            </div>
+  <!-- UNIVERSITIES SECTION -->
+  <section class="universities">
+    <div class="container">
+      <p class="section-subtitle">Parceiros Universitários</p>
+      <div class="universities-grid">
+        <div class="university-item">
+          <div class="uni-icon">🏛️</div>
+          <span>UAN</span>
         </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section class="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <h2>Como Funciona</h2>
-                <p class="section-description">3 passos simples para começar</p>
-            </div>
-
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div>
-                        <h3>Cria uma Conta</h3>
-                        <p>Regista-te como aluno ou professor em menos de 2 minutos</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div>
-                        <h3>Escolhe um Curso</h3>
-                        <p>Navega por centenas de cursos das universidades parceiras</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div>
-                        <h3>Aprende e Cresce</h3>
-                        <p>Completa módulos, ganha pontos e sobe no ranking</p>
-                    </div>
-                </div>
-            </div>
+        <div class="university-item">
+          <div class="uni-icon">🏛️</div>
+          <span>Católica</span>
         </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Pronto para Começar?</h2>
-                <p>Junta-te a milhares de estudantes que já estão transformando a sua educação</p>
-                <a href="register.html" class="btn btn-cta">Criar Conta Gratuita</a>
-            </div>
+        <div class="university-item">
+          <div class="uni-icon">🏛️</div>
+          <span>Metodista</span>
         </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="footer-icon">📚</span>
-                    <span>Kanda</span>
-                </div>
-                <ul class="footer-links">
-                    <li><a href="about.html">Sobre</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="privacy.html">Privacidade</a></li>
-                    <li><a href="terms.html">Termos</a></li>
-                </ul>
-                <div class="footer-social">
-                    <a href="#" title="Facebook">f</a>
-                    <a href="#" title="Instagram">📸</a>
-                    <a href="#" title="LinkedIn">in</a>
-                    <a href="#" title="Twitter">𝕏</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                &copy; 2024 Kanda. Todos os direitos reservados.
-            </div>
+        <div class="university-item">
+          <div class="uni-icon">🏛️</div>
+          <span>ISPITEC</span>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <script src="js/main.js"></script>
+  <!-- FEATURES SECTION -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Características</p>
+        <h2>Porquê Escolher Kanda?</h2>
+        <p class="section-description">Uma plataforma completa para potenciar o teu aprendizado com gamificação, comunidade e certificação</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎮</div>
+          <h3>Gamificação Total</h3>
+          <p>Ganhe pontos, insígnias e suba de nível enquanto aprende. O aprendizado nunca foi tão divertido!</p>
+          <ul class="feature-list">
+            <li>Pontos de Experiência (XP)</li>
+            <li>Insígnias e Troféus</li>
+            <li>Sistema de Níveis</li>
+            <li>Desafios Semanais</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🏆</div>
+          <h3>Rankings em Tempo Real</h3>
+          <p>Compete com colegas do seu nível e apareça no Hall da Fama. Reconhecimento real para esforço real.</p>
+          <ul class="feature-list">
+            <li>Rankings Globais</li>
+            <li>Rankings por Curso</li>
+            <li>Rankings por Universidade</li>
+            <li>Badges Especiais</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📚</div>
+          <h3>Cursos Universitários</h3>
+          <p>Acesso a conteúdos criados pelas universidades mais prestigiadas de Angola.</p>
+          <ul class="feature-list">
+            <li>45+ Cursos Disponíveis</li>
+            <li>Instrutores Qualificados</li>
+            <li>Conteúdo Prático</li>
+            <li>Atualizações Regulares</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Progresso Rastreado</h3>
+          <p>Veja seu progresso em tempo real com gráficos e estatísticas detalhadas do seu aprendizado.</p>
+          <ul class="feature-list">
+            <li>Dashboard Pessoal</li>
+            <li>Análises Detalhadas</li>
+            <li>Certificados Digitais</li>
+            <li>Histórico Completo</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3>Comunidade Ativa</h3>
+          <p>Conecte-se com milhares de estudantes, faça perguntas e colabore com colegas.</p>
+          <ul class="feature-list">
+            <li>Fórums de Discussão</li>
+            <li>Grupos de Estudo</li>
+            <li>Chat em Tempo Real</li>
+            <li>Mentorias</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Aprendizado Personalizado</h3>
+          <p>Recomendações baseadas no seu ritmo e estilo de aprendizado individual.</p>
+          <ul class="feature-list">
+            <li>Planos Personalizados</li>
+            <li>Ritmo Flexível</li>
+            <li>Conteúdo Adaptativo</li>
+            <li>Sugestões Inteligentes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2>Como Funciona</h2>
+        <p class="section-description">3 passos simples para transformar a tua educação</p>
+      </div>
+
+      <div class="steps-container">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Cria uma Conta Gratuita</h3>
+            <p>Regista-te como aluno ou professor em menos de 2 minutos. Acesso imediato a todos os cursos.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Escolhe um Curso</h3>
+            <p>Navega por centenas de cursos das universidades parceiras. Encontra exatamente o que procuras.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Aprende e Ganhas Prêmios</h3>
+            <p>Completa módulos, ganha pontos, sobe de nível e apareça no Hall da Fama.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">2.340+</div>
+          <p class="stat-label">Alunos Inscritos</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">45+</div>
+          <p class="stat-label">Cursos Ativos</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">89%</div>
+          <p class="stat-label">Taxa Conclusão</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">4.8/5</div>
+          <p class="stat-label">Avaliação Média</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>O que Dizem os Alunos</h2>
+        <p class="section-description">Histórias de sucesso de estudantes como tu</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">👩</div>
+            <div>
+              <strong>Sofia Oliveira</strong>
+              <span class="testimonial-course">Python para Iniciantes</span>
+            </div>
+          </div>
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Kanda mudou completamente a forma como estudo. A gamificação mantém-me motivada e o Hall da Fama é um incentivo incrível!"</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">👨</div>
+            <div>
+              <strong>Carlos Mendes</strong>
+              <span class="testimonial-course">Web Development</span>
+            </div>
+          </div>
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Finalmente consegui aprender programação de forma divertida. Os cursos são práticos e a comunidade é super supportiva."</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">👩</div>
+            <div>
+              <strong>Maria Santos</strong>
+              <span class="testimonial-course">Data Science</span>
+            </div>
+          </div>
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"O certificado digital que recebi é reconhecido. Kanda não é só um site, é uma comunidade de aprendizagem real."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Pronto para Transformar a Tua Educação?</h2>
+        <p>Junta-te a milhares de estudantes que já estão transformando a sua forma de aprender em Angola</p>
+        <div class="cta-buttons">
+          <a href="register.html" class="btn btn-primary btn-lg">Criar Conta Gratuita</a>
+          <a href="contact.html" class="btn btn-secondary btn-lg">Falar com Alguém</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Perguntas Frequentes</h2>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>A Kanda é realmente gratuita?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-content">
+            <p>Sim! Kanda é 100% gratuita para alunos. Todos os cursos e features estão disponíveis sem custo. Oferecemos certificados digitais também sem custo extra.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>Preciso de conhecimento prévio para começar?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-content">
+            <p>Não! Todos os nossos cursos começam do zero. Temos conteúdo para iniciantes, intermédios e avançados. Escolhe o que se encaixa contigo.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>O certificado é reconhecido?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-content">
+            <p>Sim! Os certificados de Kanda são emitidos pelas universidades parceiras e são reconhecidos no mercado laboral angolano.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>Posso estudar ao meu próprio ritmo?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-content">
+            <p>Absolutamente! Todos os cursos são assíncronos. Podes estudar quando quiser, de qualquer lugar, e no teu próprio ritmo.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>Como funciona o Hall da Fama?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-content">
+            <p>À medida que completas cursos e atividades, ganhas XP. Estes pontos determinar a tua posição no ranking global e por curso.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>Há suporte em caso de dúvidas?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-content">
+            <p>Sim! Temos fóruns de discussão, mentores disponíveis, FAQ detalhado e equipa de suporte que responde em até 24 horas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-brand">
+            <span class="footer-icon">🎓</span>
+            <span>Kanda</span>
+          </div>
+          <p class="footer-desc">Transformando educação em Angola através da gamificação e tecnologia.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Produto</h4>
+          <ul class="footer-links">
+            <li><a href="curso/courses.html">Cursos</a></li>
+            <li><a href="#features">Características</a></li>
+            <li><a href="hall-of-fame.html">Hall da Fama</a></li>
+            <li><a href="register.html">Começar Grátis</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Empresa</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Sobre Nós</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="#">Imprensa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacidade</a></li>
+            <li><a href="terms.html">Termos</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Segurança</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Redes Sociais</h4>
+          <div class="footer-social">
+            <a href="#" title="Facebook" aria-label="Facebook">f</a>
+            <a href="#" title="Instagram" aria-label="Instagram">📸</a>
+            <a href="#" title="LinkedIn" aria-label="LinkedIn">in</a>
+            <a href="#" title="Twitter" aria-label="Twitter">𝕏</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Kanda. Todos os direitos reservados.</p>
+        <p>Feito com ❤️ para a Educação em Angola</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // FAQ Toggle
+    document.querySelectorAll('.faq-toggle').forEach(toggle => {
+      toggle.addEventListener('click', function() {
+        const faqItem = this.parentElement;
+        faqItem.classList.toggle('active');
+        
+        const icon = this.querySelector('.faq-icon');
+        icon.textContent = faqItem.classList.contains('active') ? '−' : '+';
+      });
+    });
+  </script>
 </body>
 </html>
