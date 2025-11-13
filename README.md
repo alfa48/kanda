@@ -1,4 +1,4 @@
-# 📁 EduPath Angola - Estrutura Completa do Projeto
+# 📁 Kanda - Estrutura Completa do Projeto
 
 ## 🗂️ Estrutura de Pastas
 
@@ -245,5 +245,5 @@ Se precisares de ajuda:
 
 ---
 
-**Criado com ❤️ para EduPath Angola**
+**Criado com ❤️ para Kanda**
 *Versão 1.0 - Novembro 2024*# kanda
