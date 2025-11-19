@@ -1,3 +1,4 @@
+
 export enum ExerciseType {
   MULTIPLE_CHOICE = 'multiple_choice',
   TRUE_FALSE = 'true_false',
@@ -49,14 +50,37 @@ export interface Achievement {
   unlocked: boolean;
 }
 
+export interface Teacher {
+  id: string;
+  name: string;
+  specialty: string;
+  avatarUrl?: string;
+  bio: string;
+}
+
+export interface Message {
+  id: string;
+  senderId: string;
+  receiverId: string;
+  content: string;
+  timestamp: Date;
+  isRead: boolean;
+}
+
 export interface User {
   id: string;
   name: string;
   email: string;
-  targetCourse: string; // e.g., Engineering
-  academicLevel: number;
-  streakDays: number;
-  totalXP: number;
+  role: 'student' | 'teacher'; // Added role
+  targetCourse?: string; // Student only
+  academicLevel?: number; // Student only
+  streakDays?: number; // Student only
+  totalXP?: number; // Student only
+  teacherId?: string; // Student only
+  
+  // Teacher specific fields
+  specialty?: string;
+  bio?: string;
 }
 
 export interface Recommendation {

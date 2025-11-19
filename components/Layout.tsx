@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { Menu, X, Home, BookOpen, Award, User, LogOut } from 'lucide-react';
+
+import React, { useState, useEffect } from 'react';
+import { Menu, X, Home, BookOpen, User, LogOut, MessageCircle, PenTool, BarChart2, Users } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 interface LayoutProps {
@@ -10,15 +11,27 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  
+  // Determine if we are in "Teacher Mode" based on the URL for this demo
+  const isTeacherRoute = location.pathname.startsWith('/teacher');
 
-  const navItems = [
+  const studentNavItems = [
     { path: '/dashboard', label: 'Dashboard', icon: <Home size={20} /> },
     { path: '/subjects', label: 'Disciplinas', icon: <BookOpen size={20} /> },
+    { path: '/chat', label: 'Mensagens', icon: <MessageCircle size={20} /> },
     { path: '/profile', label: 'Perfil', icon: <User size={20} /> },
   ];
 
+  const teacherNavItems = [
+    { path: '/teacher', label: 'Visão Geral', icon: <BarChart2 size={20} /> },
+    { path: '/teacher/profile', label: 'Meu Perfil Pro', icon: <User size={20} /> },
+    { path: '/teacher/students', label: 'Meus Alunos', icon: <Users size={20} /> },
+    { path: '/chat', label: 'Mensagens', icon: <MessageCircle size={20} /> }, // Shared chat
+  ];
+
+  const navItems = isTeacherRoute ? teacherNavItems : studentNavItems;
+
   const handleLogout = () => {
-    // In a real app, clear tokens here
     navigate('/');
   };
 
@@ -38,16 +51,19 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
         ${sidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
       `}>
         <div className="h-12 flex items-center px-4 bg-carbon-gray90 border-b border-carbon-gray80">
-          <span className="font-mono font-bold text-lg tracking-wider text-white">KANDA<span className="text-carbon-blue">.</span></span>
+          <span className="font-mono font-bold text-lg tracking-wider text-white">
+            KANDA<span className="text-carbon-blue">.</span>
+            {isTeacherRoute && <span className="text-xs ml-2 font-sans bg-carbon-gray80 px-1 rounded text-gray-300">PROF</span>}
+          </span>
           <button className="ml-auto md:hidden" onClick={() => setSidebarOpen(false)}>
             <X size={20} />
           </button>
         </div>
 
-        <nav className="flex-1 py-6">
+        <nav className="flex-1 py-6 flex flex-col">
           <ul className="space-y-1">
             {navItems.map((item) => {
-              const isActive = location.pathname.startsWith(item.path);
+              const isActive = location.pathname === item.path;
               return (
                 <li key={item.path}>
                   <Link 
@@ -66,6 +82,28 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
               );
             })}
           </ul>
+
+          {/* Role Switcher for Demo */}
+          <div className="mt-auto px-4 pt-6 pb-2 border-t border-carbon-gray80">
+             <p className="text-[10px] text-gray-500 uppercase font-bold mb-2">Acesso Rápido (Demo)</p>
+             {!isTeacherRoute ? (
+                 <Link 
+                    to="/teacher"
+                    className="flex items-center px-3 py-2 text-xs font-medium rounded bg-carbon-gray80 text-gray-300 hover:text-white hover:bg-carbon-blue transition-colors mb-2"
+                 >
+                    <PenTool size={14} className="mr-2"/>
+                    Ir para Área do Professor
+                 </Link>
+             ) : (
+                <Link 
+                    to="/dashboard"
+                    className="flex items-center px-3 py-2 text-xs font-medium rounded bg-carbon-gray80 text-gray-300 hover:text-white hover:bg-carbon-blue transition-colors mb-2"
+                 >
+                    <BookOpen size={14} className="mr-2"/>
+                    Ir para Área do Aluno
+                 </Link>
+             )}
+          </div>
         </nav>
 
         <div className="p-4 border-t border-carbon-gray80">
@@ -86,7 +124,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
           <button onClick={() => setSidebarOpen(true)}>
             <Menu size={24} />
           </button>
-          <span className="ml-4 font-bold">KANDA</span>
+          <span className="ml-4 font-bold">KANDA {isTeacherRoute && '(Prof)'}</span>
         </header>
 
         <div className="flex-1 p-4 md:p-8 max-w-7xl mx-auto w-full">

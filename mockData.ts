@@ -1,14 +1,71 @@
-import { Discipline, Achievement, User, Recommendation, ExerciseType } from './types';
+
+import { Discipline, Achievement, User, Recommendation, ExerciseType, Teacher, Message } from './types';
+
+export const TEACHERS: Teacher[] = [
+  {
+    id: 't1',
+    name: 'Prof. Amélia Zola',
+    specialty: 'Matemática & Física',
+    bio: 'Apaixonada por ensinar exatas de forma simples. Mestre em Engenharia Civil.',
+    avatarUrl: 'https://i.pravatar.cc/150?u=t1'
+  },
+  {
+    id: 't2',
+    name: 'Dr. João Mavungo',
+    specialty: 'Biologia & Química',
+    bio: 'Doutorado em Bioquímica. Preparo alunos para Medicina há 10 anos.',
+    avatarUrl: 'https://i.pravatar.cc/150?u=t2'
+  }
+];
 
 export const MOCK_USER: User = {
   id: 'u1',
   name: 'Carlos Silva',
   email: 'carlos@kanda.ao',
+  role: 'student',
   targetCourse: 'Engenharia Informática',
   academicLevel: 4,
   streakDays: 4,
   totalXP: 1250,
+  teacherId: 't1'
 };
+
+// Helper to simulate logged in teacher
+export const MOCK_TEACHER_ACCOUNT: User = {
+  id: 't1',
+  name: 'Prof. Amélia Zola',
+  email: 'amelia@kanda.ao',
+  role: 'teacher',
+  specialty: 'Matemática & Física',
+  bio: 'Apaixonada por ensinar exatas de forma simples. Mestre em Engenharia Civil pela UAN. Leciono há 15 anos com foco em preparação para exames nacionais.',
+};
+
+export const MESSAGES: Message[] = [
+  {
+    id: 'm1',
+    senderId: 't1',
+    receiverId: 'u1',
+    content: 'Olá Carlos! Vi que tiveste um ótimo desempenho em Álgebra. Continua assim!',
+    timestamp: new Date(Date.now() - 86400000), // 1 day ago
+    isRead: true
+  },
+  {
+    id: 'm2',
+    senderId: 'u1',
+    receiverId: 't1',
+    content: 'Obrigado Professora. Tenho uma dúvida na questão 3 do módulo de Matrizes.',
+    timestamp: new Date(Date.now() - 4000000), // few hours ago
+    isRead: true
+  },
+  {
+    id: 'm3',
+    senderId: 't1',
+    receiverId: 'u1',
+    content: 'Claro, podes enviar a foto do teu cálculo? Vou analisar.',
+    timestamp: new Date(Date.now() - 3600000), // 1 hour ago
+    isRead: false
+  }
+];
 
 export const ACHIEVEMENTS: Achievement[] = [
   { id: 'a1', title: 'Primeiros Passos', description: 'Completaste a tua primeira aula.', icon: '🚀', unlocked: true },
