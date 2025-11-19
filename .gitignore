@@ -1,0 +1,34 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vite
+dist/
+.cache/
+vite.config.local.*
+
+# Dependencies
+node_modules/
+
+# Editor folders
+.vscode/
+.idea/
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Optional: prevent lockfiles if você não quer versionar
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
